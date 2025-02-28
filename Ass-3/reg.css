@@ -1,0 +1,94 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #f8f9fa; /* Light gray background */
+}
+
+/* Form Container */
+.container {
+    background: linear-gradient(to right, #ff6f61, #ff9966); /* Gradient inside the form */
+    padding: 25px;
+    width: 400px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    color: white; /* Text inside form is white */
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+    color: white;
+}
+
+input, select {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    outline: none;
+    transition: border-color 0.3s ease-in-out;
+    background: white;
+    color: black;
+}
+
+input:focus, select:focus {
+    border-color: #ff3d3d;
+}
+
+/* Styling for Gender Radio Buttons */
+.gender-options {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.gender-options input {
+    width: auto;
+    margin-right: 5px;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #ff3d3d;
+    color: white;
+    border: none;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background: #d9534f;
+}
+
+/* Error Message Styling */
+.error {
+    color: yellow;
+    font-size: 0.9rem;
+    margin-top: 5px;
+    display: none;
+}
